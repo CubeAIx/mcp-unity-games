@@ -15,7 +15,7 @@
 ### Integrated Solution for Game Development
 [A Live Demo with Unity 2025 LTS](https://drive.google.com/file/d/1UBO1hLAVkHbJbXklioScavXkz3QXzxp0/view)<br>
 <br>
-[Demo screenshot]([https://drive.google.com/file/d/1UBO1hLAVkHbJbXklioScavXkz3QXzxp0/view](https://drive.google.com/file/d/1_A8_IYji4l9m7qbdcDBYcbEJ2uTZuqCB/view?usp=drive_link))<br>
+![Demo screenshot](https://drive.google.com/file/d/1_A8_IYji4l9m7qbdcDBYcbEJ2uTZuqCB/view?usp=drive_link "Demo screenshot")<br>
 <br>
 **Core Toolchain**  
 - **Modeling & Sculpting**  

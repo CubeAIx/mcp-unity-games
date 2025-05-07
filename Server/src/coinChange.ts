@@ -1,43 +1,40 @@
-export interface CoinChange {
-  minCoins: number
-  coins: number[]
-}
-
 /**
- * Given a set of categories of coins C and an amount of money S, the goal is:
- * to give change for S but to use a minimum number of coins. Suppose each category of coin has an infinite number of pieces.
- * @param money - amon of money.
- * @param coins - The coins that are available.
- * @returns CoinChange, the minimum number of coins, and which coins are selected
+ * Pascal's Triangle is an array of binomial coefficients. It can be used for unwrapping terms like
+ * (a + b)^5.
+ * To construct Pascal's Triangle you add the numbers above the child entry together. Here are the first five rows:
+ *     1
+ *    1 1
+ *   1 2 1
+ *  1 3 3 1
+ * 1 4 6 4 1
+ *
+ * Time Complexity: quadratic (O(n^2)).
+ *
+ * @param n The exponent / The index of the searched row.
+ * @returns The nth row of Pascal's Triangle
+ * @see https://en.wikipedia.org/wiki/Pascal's_triangle
  */
-export const coinChange = (money: number, coins: number[]): CoinChange => {
-  const minCoins: number[] = Array(money + 1).fill(Infinity)
-  const lastCoin: number[] = Array(money + 1).fill(-1)
-
-  minCoins[0] = 0
-
-  // Fill in the DP table
-  for (const coin of coins) {
-    for (let j = 0; j <= money; j++) {
-      if (j >= coin) {
-        if (minCoins[j] > 1 + minCoins[j - coin]) {
-          minCoins[j] = 1 + minCoins[j - coin]
-          lastCoin[j] = coin
-        }
-      }
+export const pascalsTriangle = (n: number): number[] => {
+  const arr: number[][] = []
+  for (let i: number = 0; i < n; i++) {
+    if (i === 0) {
+      arr.push([1])
+      continue
     }
+
+    const lastRow: number[] = arr[i - 1]
+    const temp: number[] = []
+    for (let j: number = 0; j < lastRow.length + 1; j++) {
+      if (j === 0 || j === lastRow.length) {
+        temp.push(1)
+        continue
+      }
+
+      temp.push(lastRow[j - 1] + lastRow[j])
+    }
+
+    arr.push(temp)
   }
 
-  const res: CoinChange = {
-    minCoins: minCoins[money],
-    coins: []
-  }
-
-  let total: number = money
-  while (total > 0) {
-    res.coins.push(lastCoin[total])
-    total -= lastCoin[total]
-  }
-
-  return res
+  return arr[arr.length - 1]
 }

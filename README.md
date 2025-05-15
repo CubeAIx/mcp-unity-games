@@ -1,4 +1,4 @@
-# MCPup: A MCP Framework for Entire Workflow [![Twitter](https://img.shields.io/badge/Twitter-blue.svg)](https://x.com/MCPupAI) <br>
+# CubeAIx: A MCP Framework for Entire Workflow [![Twitter](https://img.shields.io/badge/Twitter-blue.svg)](https://x.com/CubeAIx) <br>
 
 
 

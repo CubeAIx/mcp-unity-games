@@ -12,10 +12,12 @@
 ## A Universal Framework for Unified Creative Pipeline
 
 <img src="demo/photo_2025-05-14_21-57-16.jpg" alt="framework" width="100%">
-### Integrated Solution for Game Development
+
+# First Integrated Solution for Game Development
+
 [A Live Demo with Unity 2025 LTS](https://drive.google.com/file/d/1UBO1hLAVkHbJbXklioScavXkz3QXzxp0/view)<br>
 <br>
-![Demo screenshot](https://github.com/mcpup-ai/mcp-unity-games/blob/master/demo/demo.png)<br>
+![Demo screenshot](https://github.com/CubeAIx/mcp-unity-games/blob/master/demo/demo.png)<br>
 <br>
 **Core Toolchain**  
 - **Modeling & Sculpting**  

@@ -8,7 +8,7 @@
 [![Node.js Version](https://img.shields.io/badge/TypeScript-5.0-Blue.svg?logo=TypeScript)](https://nodejs.org/en)
 [![MCP Version](https://img.shields.io/badge/MCP_Beta-0.9.0-cyan.svg)](https://x.com/MCPupAI)<br>
 
-# Vision
+# Vision for CubeAIx
 
 **Universal Framework for Unified Creative Pipeline**<br>
 <img src="demo/photo_2025-05-14_21-57-16.jpg" alt="framework" width="100%">
